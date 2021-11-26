@@ -89,3 +89,9 @@ from google.colab import drive
 drive.mount('/content/drive', force_remount=True)
 ```
 Secondly, in the third cell, you will see the line `%cd drive/My Drive/face_benchmark_results_2/`. Remove the 'drive/My Drive/' portion of the line, to change the line to `%cd face_benchmark_results_2/`. You can also specify your folder name if it is different than 'face_benchmark_results_2'. You can do this by simply replacing 'face_benchmark_results_2' with your folder's name. After all of this is done, you are now ready to run the entire notebook.
+
+## Interpreting the Output
+After the notebook as been successfully set up as in the previous section, you should run all the cells in the notebook. After the execution has successfully completed, you will get histograms of each individual image's results saved in the 'Results' directory we created earlier. Additionally, you will also get 2 csv files in the 'Overall Statistics' directory we create earlier, that will have the final overall results in their complete, cleaned form. The most important visualization of the lot is not the visualization of the individual images, but the 2 histograms that display the overall statistics of the evaluation. The 2 histograms showcase two different aspects of the evaluation. The first histogram shows distances for images that belong to the same category i.e images of the same person. These distances should be ideally quite lower, as images of the same person should have greater similarity. The second histogram shows distances for images that belong to different categories i.e images of different people. These distances should be ideally higher, as images of different people should have greater dissimilarities.
+
+Shown below are two example histograms of the overall results:
+![This is an image](https://github.com/danyalsaqib/deepface_benchmarking/blob/main/Overall%20Statistics%20-%20Distances%20for%20Same%20Catgeory%20of%20Images.png)
