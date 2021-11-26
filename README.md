@@ -20,24 +20,9 @@ The datatset that you want to perform the evaluation on should be kept in a quit
 ## Setting up the codebase
 You should now place the 'deepface_benchmark_optim_saving.py' file in the same directory as the superfolder containing all unique folders. Hence, the directory should look something like this:
 
-|- directory_where_evaluation_sheets_will_be_produced
-
-   |-- deepface_benchmark_optim_saving.py
-
-   |-- folder_with_all_the_unique_face_folders
-
-       |-- person_1
-
-       |-- person_2
-
-       |-- person_3
-
-             .
-
-             .
-
-             .
-
-             .
-
-       |-- person_n
+- directory_where_evaluation_sheets_will_be_produced
+  - deepface_benchmark_optim_saving.py
+  - folder_with_all_the_unique_face_folders
+    - person_1
+    - person_2
+    - person_3
