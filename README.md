@@ -30,7 +30,7 @@ You should now place the 'deepface_benchmark_optim_saving.py' file in the same d
 ## Modifying Code File
 You now have the option of opening up the 'deepface_benchmark_optim_saving.py' file, and making 5 potential changes:
 
-1. On line 22 and line 56 in both the 'rootdir' and 'testdir' variables, change the words from 'celeb_updated_ready_25_june' to 'superfolder_with_all_the_unique_face_folders', whatever your superfolder may be named. This is to tell the 'deepface_benchmark_optim_saving.py' file to look in the appropriate place for the folders of various persons.
+1. On line 22 and line 56 in both the 'rootdir' and 'testdir' variables, change the words from 'celeb_updated_ready_25_june' to whatever your superfolder may be named. This is to tell the 'deepface_benchmark_optim_saving.py' file to look in the appropriate place for the folders of various persons.
 2. On line 25, you will see the line: `num_files_test = 5`. In this line, you can change how many images from each folder will be chosen as 'test images'. The recommended number is between 3 and 6, but any number of images may be chosen. You may also choose to leave this variable as it is.
 3. On line 87, you will see the line: `for i in range(40):`. In this line, change the number from 40 to however many images there are in each folder. If the number of images in each folder is different than the other, then choose the lowest number. Basically, this number determines how many images from each folder will be tested against our test images.
 4. On line 68 and line 92, you have the option of modifying the 'model_name' and 'detector_backend' used for the deepface function. All possible models are listed in the deepface repository.
