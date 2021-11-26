@@ -47,7 +47,45 @@ This will now begin the evaluation process. Firstly, a separate test folder will
 
 ## Results
 After the evaluation script has run its course, we will have several csv files, each corresponding to a test image. Each test image will have been evaluated against several images of all other categories. You can open up each csv file and check its contents. Each csv file has 4 columns:
-1. Test Image:    The image's own name, as saved in the test folder.
-2. Target Image:  The image that was checked to determine similarities in the faces.
-3. Distance:      Between 0 and 1, what the distance is between the two images. The greater the distance, the more dissimilar the faces.
+1. Test Image: The image's own name, as saved in the test folder.
+2. Target Image: The image that was checked to determine similarities in the faces.
+3. Distance: Between 0 and 1, what the distance is between the two images. The greater the distance, the more dissimilar the faces.
 4. Verified: If the distance is less than the defined threshold, then the faces are listed as belonging to the same person i.e 1. Dissimilar faces means a 0.
+
+## Visualization and Overall Results
+Now that we have all of our results, we will probably want to do two main things. Firstly, we want to visualize these results, and extract some meaningful information from them. Secondly, we will want to see not just the results for individual imeages, but overall results to better understand our model and our dataset. We can do both of these things using the Python Notebook 'face_benchmarking_visualization_2.ipynb'.
+
+The notebook is originally meant to be used on Colab. However, it can just as easily be run on a Jupyter Notebook with slight modifications.
+
+### For Colab
+For using the Notebook on Colab, you first need to go to your Google Drive, and create a new Folder where the data will be stored. In our case, the folder was named 'face_benchmark_results_2'. After creating this folder in 'My Drive', go ahead and upload all of the generated csv files from the previous section into this folder. After all of the csv files have been uploaded, you need to create two additional folders within the same directory. The first folder will be named 'Results", and the second folder will be named 'Overall Statistics'. Leave these two folders empty for now. The directory shoud look something like this:
+
+- face_benchmark_results_2
+  - Results
+  - Test
+  - benchmarks_of_image_person_1_img_0.csv
+  - benchmarks_of_image_person_1_img_1.csv
+  - benchmarks_of_image_person_2_img_0.csv
+  - benchmarks_of_image_person_2_img_1.csv
+
+You can now open up Google Colab, and specify your folder name if it is different than 'face_benchmark_results_2'. You can do this by simply replacing 'face_benchmark_results_2' with your folder's name in the third cell in the line `%cd drive/My Drive/face_benchmark_results_2/`. You are now ready to run the entire notebook.
+
+### For Jupyter
+Create a new folder, where you can place the notebook file 'face_benchmarking_visualization_2.ipynb'. Now within this folder, create a new folder, and name it to your liking. In our case, the folder was named 'face_benchmark_results_2'. Within this folder, copy all of the csv files that were generated during the previous step. Now within this folder, you need to create two additional folders within the same directory. The first folder will be named 'Results", and the second folder will be named 'Overall Statistics'. Leave these two folders empty for now. The directory shoud look something like this:
+
+- face_benchmarking_visualization_2.ipynb
+- face_benchmark_results_2
+  - Results
+  - Test
+  - benchmarks_of_image_person_1_img_0.csv
+  - benchmarks_of_image_person_1_img_1.csv
+  - benchmarks_of_image_person_2_img_0.csv
+  - benchmarks_of_image_person_2_img_1.csv
+
+You can now open up Jupyter, and firstly comment out the following lines in the first cell.
+
+```
+from google.colab import drive
+drive.mount('/content/drive', force_remount=True)
+```
+Secondly, in the third cell, you will see the line `%cd drive/My Drive/face_benchmark_results_2/`. Remove the 'drive/My Drive/' portion of the line, to change the line to `%cd face_benchmark_results_2/`. You can also specify your folder name if it is different than 'face_benchmark_results_2'. You can do this by simply replacing 'face_benchmark_results_2' with your folder's name. After all of this is done, you are now ready to run the entire notebook.
