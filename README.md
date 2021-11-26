@@ -48,9 +48,9 @@ This will now begin the evaluation process. Firstly, a separate test folder will
 ## Results
 After the evaluation script has run its course, we will have several csv files, each corresponding to a test image. Each test image will have been evaluated against several images of all other categories. You can open up each csv file and check its contents. Each csv file has 4 columns:
 1. Test Image: The image's own name, as saved in the test folder.
-2. Target Image: The image that was checked to determine similarities in the faces.
-3. Distance: Between 0 and 1, what the distance is between the two images. The greater the distance, the more dissimilar the faces.
-4. Verified: If the distance is less than the defined threshold, then the faces are listed as belonging to the same person i.e 1. Dissimilar faces means a 0.
+2. Target Image: The image that was checked to determine similarity with the 'Test Image'.
+3. Distance: Between 0 and 1, what the cosine distance is between the two images. The greater the distance, the more dissimilar the faces.
+4. Verified: If the distance is less than the defined threshold, then the faces are listed as belonging to the same person i.e 1. Dissimilar faces mean a 0.
 
 An example output csv file is shown below:
 
