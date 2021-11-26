@@ -104,4 +104,4 @@ Shown below are two example histograms of the overall results:
 You will notice that within the notebook, along with these histograms, several statistical parameters related to the overall data will be displayed. These can give you an even better picture about the model's performance, and your dataset.
 
 ## Conclusion
-If you follow all the instructions correctly, the repository provides a convenient way to benchmark various deepface models on large datasets. We hope the instructions are clear and easy-to-run for all, and any feedback or comments would be highly appreciated.
+If you follow all the instructions correctly, the repository provides a convenient way to benchmark various deepface models on large datasets. We hope the instructions are clear and easy-to-run for all. Any feedback or comments would be highly appreciated.
