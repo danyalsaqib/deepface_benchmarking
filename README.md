@@ -15,4 +15,19 @@ This particular repository is a fork of the original repository, with two basic 
 The installation of this particular repository should automatically initiate the process of installing all dependencies, such as NumPy and Pandas. Once this particular library has been installed, you are ready to go!
 
 ## Arrangement of dataset
-The datatset that you want to perform the evaluation on should be kept in a quite particular manner.
+The datatset that you want to perform the evaluation on should be kept in a quite particular manner. The format of the dataset should be something like this: You should have a folder for each unique person or celebrity, containing some photos of this person. The photos should be clear, and should ideally have only the concerned person's face visible. Hence, a complete dataset folder would have a few folders, each named after the unique person, and each containing a few photos of the unique person. Note that all of these folders should be placed in a single directory.
+
+## Setting up the codebase
+You should now place the 'deepface_benchmark_optim_saving.py' file in the same directory as the superfolder containing all unique folders. Hence, the directory should look something like this:
+
+|- directory_where_evaluation_sheets_will_be_produced
+   |-- deepface_benchmark_optim_saving.py
+   |-- folder_with_all_the_unique_face_folders
+       |-- person_1
+       |-- person_2
+       |-- person_3
+             .
+             .
+             .
+             .
+       |-- person_n
