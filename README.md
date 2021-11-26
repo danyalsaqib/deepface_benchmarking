@@ -54,7 +54,7 @@ After the evaluation script has run its course, we will have several csv files, 
 
 An example output csv file is shown below:
 
-![Overall Same](https://github.com/danyalsaqib/deepface_benchmarking/blob/main/csv_example.png)
+![Overall Same](https://github.com/danyalsaqib/deepface_benchmarking/blob/main/csv_example_image.png)
 
 ## Visualization and Overall Results
 Now that we have all of our results, we will probably want to do two main things. Firstly, we want to visualize these results, and extract some meaningful information from them. Secondly, we will want to see not just the results for individual imeages, but overall results to better understand our model and our dataset. We can do both of these things using the Python Notebook 'face_benchmarking_visualization_2.ipynb'.
