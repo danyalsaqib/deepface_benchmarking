@@ -86,7 +86,7 @@ Create a new folder, where you can place the notebook file 'face_benchmarking_vi
   - benchmarks_of_image_person_2_img_0.csv
   - benchmarks_of_image_person_2_img_1.csv
 
-You can now open up Jupyter, and firstly comment out the following lines in the first cell.
+You can now open up Jupyter, and firstly comment out the following lines in the second cell. These lines are specific to Google Drive and Google Colab, and we will not need them in Jupyter.
 
 ```
 from google.colab import drive
