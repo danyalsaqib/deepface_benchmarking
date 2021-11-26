@@ -1,5 +1,5 @@
 # Deepface Benchmarking
-This repository contains all the files and folders along with instructions on running the benchmarking evaluation scripts on any dataset.
+This repository contains all the files and folders along with instructions on running the benchmarking evaluation scripts on any dataset. The files have been primarily run and tested on an Ubuntu 20.04 machine.
 
 ## Prerequisites
 The major prerequisite that this repository requires is the deepface library. You could easily look up instructions for installing the standard deepface library. However, within this particular project, I would recommend installing a separate version of deepface, using the code below:
@@ -96,3 +96,8 @@ After the notebook as been successfully set up as in the previous section, you s
 Shown below are two example histograms of the overall results:
 ![Overall Same](https://github.com/danyalsaqib/deepface_benchmarking/blob/main/Overall%20Statistics%20-%20Distances%20for%20Same%20Catgeory%20of%20Images.png)
 ![Overall Different](https://github.com/danyalsaqib/deepface_benchmarking/blob/main/Overall%20Statistics%20-%20Distances%20for%20Different%20Catgeory%20of%20Images.png)
+
+You will notice that within the notebook, along with these histograms, several statistical parameters related to the overall data will be displayed. These can give you an even better picture about the model's performance, and your dataset.
+
+## Conclusion
+If you follow all the instructions correctly, the repository provides a convenient way to benchmark various deepface models on large datasets. We hope the instructions are clear and easy-to-run for all, and any feedback or comments would be highly appreciated.
