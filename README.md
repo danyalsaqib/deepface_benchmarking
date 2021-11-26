@@ -62,7 +62,7 @@ Now that we have all of our results, we will probably want to do two main things
 The notebook is originally meant to be used on Colab. However, it can just as easily be run on a Jupyter Notebook with slight modifications.
 
 ### For Colab
-For using the Notebook on Colab, you first need to go to your Google Drive, and create a new Folder where the data will be stored. In our case, the folder was named 'face_benchmark_results_2'. After creating this folder in 'My Drive', go ahead and upload all of the generated csv files from the previous section into this folder. After all of the csv files have been uploaded, you need to create two additional folders within the same directory. The first folder will be named 'Results", and the second folder will be named 'Overall Statistics'. Leave these two folders empty for now. The directory shoud look something like this:
+For using the Notebook on Colab, you first need to go to your Google Drive, and create a new Folder where the data will be stored. In our case, the folder was named 'face_benchmark_results_2'. After creating this folder in 'My Drive', go ahead and upload all of the generated csv files from the previous section into this folder. After all of the csv files have been uploaded, you need to create two additional folders within the same directory. The first folder will be named 'Results", and the second folder will be named 'Overall Statistics'. Leave these two folders empty for now. The directory should look something like this:
 
 - face_benchmark_results_2
   - Results
@@ -75,7 +75,7 @@ For using the Notebook on Colab, you first need to go to your Google Drive, and 
 You can now open up Google Colab, and specify your folder name if it is different than 'face_benchmark_results_2'. You can do this by simply replacing 'face_benchmark_results_2' with your folder's name in the third cell in the line `%cd drive/My Drive/face_benchmark_results_2/`. You are now ready to run the entire notebook.
 
 ### For Jupyter
-Create a new folder, where you can place the notebook file 'face_benchmarking_visualization_2.ipynb'. Now within this folder, create a new folder, and name it to your liking. In our case, the folder was named 'face_benchmark_results_2'. Within this folder, copy all of the csv files that were generated during the previous step. Now within this folder, you need to create two additional folders within the same directory. The first folder will be named 'Results", and the second folder will be named 'Overall Statistics'. Leave these two folders empty for now. The directory shoud look something like this:
+Create a new folder, where you can place the notebook file 'face_benchmarking_visualization_2.ipynb'. Now within this folder, create a new folder, and name it to your liking. In our case, the folder was named 'face_benchmark_results_2'. Within this folder, copy all of the csv files that were generated during the previous step. Now within this folder, you need to create two additional folders within the same directory. The first folder will be named 'Results", and the second folder will be named 'Overall Statistics'. Leave these two folders empty for now. The directory should look something like this:
 
 - face_benchmarking_visualization_2.ipynb
 - face_benchmark_results_2
